@@ -18,16 +18,17 @@ def loop():
     while (True):
         choice = cli.menu(options)
 
-        # TODO supprimer les appels bidons ci-dessous en \
-        # les insérant dans une structure logique appropriée \
-        # pour la gestion du choix
-        calc.calc()
-        anim.animate()
+        if choice == "calc":
+            calc.calc()
+        elif choice == "animate":
+            anim.animate()
+        elif choice ==  "exit":
+            break
+        else:
+            print("Invalid choice. Please try again.")
         
         cli.clear()
-
-        # TODO briser la boucle de façon appropriée dans la structure logique
-        return 
+    
 
 def terminate():
     """() -> None"""
