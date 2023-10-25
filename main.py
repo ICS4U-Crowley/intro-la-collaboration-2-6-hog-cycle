@@ -25,7 +25,7 @@ def loop():
         elif choice ==  "exit":
             break
         else:
-            print("Invalid choice. Please try again.")
+            print("Invalid, Essayer Encore!.")
         
         cli.clear()
     
