@@ -16,16 +16,16 @@ def initialise():
 def loop():
     """() -> None"""
     while (True):
-        choice = cli.menu(options)
+        choix  = cli.menu(options)
 
-        if choice == "calc":
+        if choix == "calc":
             calc.calc()
-        elif choice == "animate":
+        elif choix == "animate":
             anim.animate()
-        elif choice ==  "exit":
+        elif choix ==  "exit":
             break
         else:
-            print("Invalid, Essayer Encore!.")
+            print("Choix Invalid, Essayer Encore!.")
         
         cli.clear()
     
