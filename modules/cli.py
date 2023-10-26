@@ -10,18 +10,11 @@ def greet():
     
     print("Bien veneu a ce programme tu peut reagarder un animation dun cube puis tu peut faire des calcul")
 
-def menuCalc():
-    """() -> str"""
-    print("calculatrice")
-    print("1. Addistion")
-    print("2. Soustraction")
-    print("3. Multiplication")
-    print("4. Division")
-    choix = input("Choisis un option (1/2/3/4):")
-    return choix
-
 def menu(items):
-    """(list:str) -> str"""
+    """(list:str) -> str
+    Retourne le nombre de la position de l'item dans la liste des items.
+    Le 1e item retourne la valeur 1, etc. Aucune validation des valeurs invalides.
+    """
     
     for i in items:
         print(items.index(i)+1, i)
