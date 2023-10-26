@@ -13,7 +13,6 @@ def animate():
     except Terminator as e:
         print("...la fenêtre a été fermée")
 
-
 # Code pour tester cette module indépendamment du programme principal
 if __name__ == "__main__":
     animate()
