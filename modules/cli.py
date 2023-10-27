@@ -7,17 +7,19 @@ l'interface utilisateur à la console
 
 def greet():
     """() -> None"""
-    # TODO afficher un message d'acceuil
-    print("Insérer un message d'accueil ici")
+    # just un petit message au debut du programme. 
+    print("Bien veneu a ce programme tu peut reagarder un animation dun cube puis tu peut faire des calcul")
 
 def menu(items):
-    """(list:str) -> str"""
-    # TODO remplacer les instructions ci-dessous pour \
-    # afficher correctement les instructions, le menu et \
-    # pour saisir le choix
+    """(list:str) -> str
+    Retourne le nombre de la position de l'item dans la liste des items.
+    Le 1e item retourne la valeur 1, etc. Aucune validation des valeurs invalides.
+    """
+    # sa print chaque element dans un liste puis cest numero en ordre, puis demande au lutilisateur de saisir un choix
+    # dans la list. 
     for i in items:
-        print(i)
-    return ""
+        print(items.index(i)+1, i)
+    return input ("saisir votre choix (doit etre un des numero): ")
 
 def clear():
     """() -> None"""
@@ -25,15 +27,15 @@ def clear():
 
 def close():
     """() -> None"""
-    # TODO afficher un message de sortie
-    print("Insérer un message de sortie ici")
+   # message a la fin de la programme. 
+    print("Merci pour utiliser notre programme a la prochain.")
 
 # Code pour tester cette module indépendamment du programme principal
 if __name__ == "__main__":  
-    # TODO ajouter/modifier les tests unitaires pour les fonctions
+    
     clear()
     greet()
-    choix = menu(["un", "deux", "trois"])
+    choix = menu(["option 1", "option 2", "option 3"])
     print("choix =", choix)
     close()
     
