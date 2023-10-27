@@ -54,10 +54,19 @@ def calc():
 # Fonction de test pour les opérations de calcul
 def test_calculator_operations():
     try:
-        assert add(5, 3) == 9
+        assert add(5, 3) == 8
         assert subtract(10, 4) == 6
         assert multiply(7, 2) == 14
         assert divide(8, 2) == 4
         assert divide(6, 0) == "Division par zéro"
+        print("passed")
     except AssertionError :
         print("failed")
+
+if __name__ =="__main__":
+    # test individual calculations
+    # test_calculator_operations()
+
+    # test calc() interface
+    # calc()
+    pass
