@@ -18,14 +18,14 @@ def loop():
     while (True):
         choice = cli.menu(options)
 
-        if choice == "calc":
+        if choice == "1":
             calc.calc()
-        elif choice == "animate":
+        elif choice == "2":
             anim.animate()
-        elif choice ==  "exit":
+        elif choice ==  "3":
             break
         else:
-            print("Invalid, Essayer Encore!.")
+            input("Invalid, Tapez [Enter] pour Essayer Encore!.")
         
         cli.clear()
     
