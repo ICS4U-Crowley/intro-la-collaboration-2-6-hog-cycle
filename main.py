@@ -25,7 +25,7 @@ def loop():
         elif choice ==  "3":
             break
         else:
-            print("Invalid, Essayer Encore!.")
+            input("Invalid, Tapez [Enter] pour Essayer Encore!.")
         
         cli.clear()
     
