@@ -29,7 +29,7 @@ def calc_menu():
     choice = input("Choisissez une opération (1/2/3/4) : ")
     return choice
 
-# Code pour tester ce module indépendamment du programme principal
+# Fonction qui execute tout le programe
 def calc():
     while True:
         choice = calc_menu()
