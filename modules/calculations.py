@@ -66,5 +66,10 @@ def test_calculator_operations():
     assert divide(8, 2) == 4
     assert divide(6, 0) == "Division par zéro"
 
-# Appel de la fonction de test
-test_calculator_operations()
+# pour tester le module
+if __name__ == "__main__":
+    # unit tests - no output means all tests passed
+    test_calculator_operations()
+
+    # interface test - try to crash it
+    calc()
